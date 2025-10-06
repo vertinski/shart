@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Upload files</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  __ASCII_LOGO__
+  <div class="card">
+    <h1>Upload files</h1>
+    <div id="drop">
+      <p class="muted">Drag and drop files here or use the picker.</p>
+      <input id="picker" type="file" multiple />
+      <div style="margin-top: .75rem;">
+        <button id="send">Upload</button>
+        <span id="status" class="muted" style="margin-left: .5rem;"></span>
+      </div>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script>
+    window.__TOKEN__ = "__TOKEN_PLACEHOLDER__";
+  </script>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
+
