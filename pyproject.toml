@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shart"
+version = "0.1.0"
+description = "Temporary FastAPI-based file sharing server with QR code link"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "qrcode>=7.4",
+  "python-multipart>=0.0.9",
+]
+
+[tool.setuptools]
+py-modules = ["main"]
+
+
