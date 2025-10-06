@@ -12,7 +12,7 @@
 
 Temporary, local-first file upload/share server built with FastAPI. It prints a QR code to your terminal so you can quickly open an upload or download page from your phone or another device on the same network. Links automatically expire after a configurable TTL.
 
-> Intended for quick, trusted, same-network transfers. Not a hardened internet-facing service.
+> ⚠️ Intended for quick, trusted, same-network transfers. Not a hardened internet-facing service.
 
 ## Features
 - Upload multiple files from any device via a simple web page
@@ -36,7 +36,7 @@ cd shart
 
 # (Recommended) create a virtualenv
 python -m venv .venv
-. .venv/bin/activate
+source .venv/bin/activate
 
 # Install
 pip install -U pip
